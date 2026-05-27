@@ -7,7 +7,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './assets/css/main.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter , Routes, Route } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Main from './pages/main/main';
@@ -34,13 +34,13 @@ useEffect(() => {
 
   return (
     <>
-     <BrowserRouter>
+     <HashRouter >
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/contact/list" element={<ContactList />} />
         <Route path="/portfolio-details" element={<PortfolioDetails />} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter >
     </>
   )
 }
