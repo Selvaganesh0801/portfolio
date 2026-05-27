@@ -1,0 +1,17 @@
+{
+    "contactDetails": [{
+            "id": "1",
+            "name": "selva",
+            "emailId": "selva@gamil.com",
+            "subject": "Requirements",
+            "message": "You are selected"
+        },
+        {
+            "id": "2",
+            "name": "selvag",
+            "emailId": "selvag@gamil.com",
+            "subject": "Requirements",
+            "message": "You are selected"
+        }
+    ]
+}
