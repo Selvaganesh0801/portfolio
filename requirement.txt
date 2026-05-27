@@ -1,0 +1,17 @@
+Default Packages :
+npm install @fortawesome/fontawesome-free (import '@fortawesome/fontawesome-free/css/all.min.css';)
+npm i react-router-dom --save
+npm install -g vite
+npm install bootstrap
+
+(import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';)
+
+npm install bootstrap -icons
+npm install bootstrap-icons @fortawesome/fontawesome-free
+
+Animations :
+npm install aos
+npm install aos swiper bootstrap
+npm install isotope-layout imagesloaded glightbox
+npm install glightbox

@@ -1,0 +1,68 @@
+.skills .skill-box {
+    background: #fff;
+    padding: 10px 20px 20px;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.skills .skill-box:hover {
+    transform: translateY(-5px);
+}
+
+.skills .progress {
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.skills .progress-bar {
+    height: 100%;
+    background-color: #0d6efd;
+    width: 0%;
+    /* Start from 0 */
+    border-radius: 20px;
+}
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-wrapper i {
+    position: absolute;
+    top: -20px;
+    width: 45px;
+    height: 45px;
+    padding: 9px;
+    border-radius: 5px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Responsive: Scale icon size on smaller screens */
+
+@media (max-width: 768px) {
+    .icon-wrapper i {
+        width: 38px;
+        height: 38px;
+        font-size: 28px;
+        top: -15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon-wrapper i {
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+        top: -12px;
+    }
+}
