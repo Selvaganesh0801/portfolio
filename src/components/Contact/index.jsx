@@ -20,13 +20,11 @@ function Contact() {
     return;
   }
  
-    const modal = new window.bootstrap.Modal(
-    document.getElementById("thankYouModal"),
-    {
-      backdrop: "static",
-      keyboard: false
-    }
-  );
+   const modalElement = document.getElementById("thankYouModal");
+
+  if (!modalElement) return;
+
+  const modal = Modal.getOrCreateInstance(modalElement);
 
   modal.show();
   // try {
@@ -68,7 +66,7 @@ function Contact() {
           </svg>
         </div>
         <p></p> */}
-        <img className='w-25' src={violetFlower} alt="" />
+        <img className='w-25' src={`${import.meta.env.BASE_URL}${violetFlower}`} alt="" />
       </div>
       <div className="container" data-aos="fade-up" data-aos-delay="100">
 

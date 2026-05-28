@@ -59,7 +59,7 @@ function PortfolioDetailsComponent({skillsData}) {
             "category": "Web Site",
             "client": "India",
             "projectDate": "May 2025",
-            "projectUrl": "https://whatsappmarketing.hermonsolutions.com/"
+            "projectUrl": "http://pinkcelebrity.in/"
 
         },
         {
@@ -112,7 +112,7 @@ function PortfolioDetailsComponent({skillsData}) {
             "category": "Web Application",
             "client": "India",
             "projectDate": "Jul 2024",
-            "projectUrl": "https://smsystem.hermonsolutions.com/"
+            "projectUrl": "http://smsystem.hermonsolutions.com/"
 
         },
         {
@@ -166,7 +166,7 @@ function PortfolioDetailsComponent({skillsData}) {
             "category": "Web Application",
             "client": "India",
             "projectDate": "Jan 2025",
-            "projectUrl": "https://araciyal.com/"
+            "projectUrl": "http://araciyal.com/"
 
         },
         {
@@ -193,7 +193,7 @@ function PortfolioDetailsComponent({skillsData}) {
             "category": "Web Site",
             "client": "India",
             "projectDate": "Nov 2025",
-            "projectUrl": "https://araciyal.com/"
+            "projectUrl": "http://skandafincorp.com"
 
         },
         {
@@ -220,7 +220,7 @@ function PortfolioDetailsComponent({skillsData}) {
           "category": "Web Application",
           "client": "India",
           "projectDate": "Dec 2025",
-          "projectUrl": "https://smrgoldfinance.com/"
+          "projectUrl": "https://smrgoldloanfinance.com/"
         },
         {
             "name": "Nurturehire",
@@ -270,7 +270,7 @@ function PortfolioDetailsComponent({skillsData}) {
             "category": "Web Site",
             "client": "India",
             "projectDate": "Sep 2025",
-            "projectUrl": "https://www.nurturehire.com/"
+            "projectUrl": "https://ruposhi.sellingpartnerservices.com/"
 
         },
         {
@@ -297,7 +297,7 @@ function PortfolioDetailsComponent({skillsData}) {
             "category": "Web Site",
             "client": "India",
             "projectDate": "Sep 2025",
-            "projectUrl": "https://www.nurturehire.com/"
+            "projectUrl": "http://betaapp.rcjewelry.com/"
 
         },
         {
@@ -327,7 +327,7 @@ function PortfolioDetailsComponent({skillsData}) {
           "category": "Web Site",
           "client": "India",
           "projectDate": "Nov 2025",
-          "projectUrl": "https://verifyzone.in/"
+          "projectUrl": "http://verifyzone.hermonsolutions.com/"
         },
         {
           "name": "Green Dart",
@@ -356,7 +356,7 @@ function PortfolioDetailsComponent({skillsData}) {
           "category": "Web Site",
           "client": "India",
           "projectDate": "Dec 2025",
-          "projectUrl": "http://geendart.hermonsolutions.com/"
+          "projectUrl": "http://greendartbuilders.com/"
         },
         {
           "name": "Qatar Medical Center",
@@ -453,7 +453,7 @@ function PortfolioDetailsComponent({skillsData}) {
             {projectData?.images.map((img, index) => (
               <img
                 key={index}
-                src={`${projectData?.path}${img}`}
+                src={`${import.meta.env.BASE_URL}${projectData?.path}${img}`}
                 className="img-fluid mb-4"
                 alt=""
               />

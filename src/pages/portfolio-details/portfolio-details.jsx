@@ -8,7 +8,12 @@ function PortfolioDetails() {
   useEffect(() => {
     const loadProjects = async () => {
       try {
-      const res = await fetch(`/db.json?ts=${Date.now()}`, {cache: "no-store",});
+      const res = await fetch(
+        `${import.meta.env.BASE_URL}db.json?ts=${Date.now()}`,
+        {
+          cache: "no-store",
+        }
+      );
       const data = await res.json();
         setProjectDetails(data.projectDetails);
         setskillDetails(data.skillsData);

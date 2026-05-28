@@ -6,7 +6,7 @@ function Home() {
   const [experience, setExperience] = useState(0);
   const images = [profile, profile1];
   const [index, setIndex] = useState(0);
-
+  const [loading,setLoading]=useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
       setLoading(true); // start blur

@@ -127,7 +127,7 @@ function Portfolio({ projectDetails }) {
             <div key={index} className={`col-lg-4 col-md-6 portfolio-item isotope-item ${projectDetails?.filtercategory}`}>
               <div className="portfolio-card">
                 <div className="portfolio-image">
-                  <img src={projectDetails?.path+projectDetails?.image} className="img-fluid" alt="" loading="lazy"/>
+                  <img src={`${import.meta.env.BASE_URL}${projectDetails?.path+projectDetails?.image}`} className="img-fluid" alt="" loading="lazy"/>
                   <div className="portfolio-overlay">
                     <div className="portfolio-actions">
                       <a href={projectDetails?.path+projectDetails?.image} className="glightbox preview-link" data-gallery="portfolio-gallery-web"><i className="bi bi-eye"></i></a>
