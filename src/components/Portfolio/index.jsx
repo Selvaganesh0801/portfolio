@@ -130,7 +130,7 @@ function Portfolio({ projectDetails }) {
                   <img src={`${import.meta.env.BASE_URL}${projectDetails?.path+projectDetails?.image}`} className="img-fluid" alt="" loading="lazy"/>
                   <div className="portfolio-overlay">
                     <div className="portfolio-actions">
-                      <a href={projectDetails?.path+projectDetails?.image} className="glightbox preview-link" data-gallery="portfolio-gallery-web"><i className="bi bi-eye"></i></a>
+                      <a href={`${import.meta.env.BASE_URL}${projectDetails?.path+projectDetails?.image}`} className="glightbox preview-link" data-gallery="portfolio-gallery-web"><i className="bi bi-eye"></i></a>
                       <button onClick={()=>handleChatNavigate(projectDetails?.link)} className="details-link"><i className="bi bi-arrow-right"></i></button>
                     </div>
                   </div>
