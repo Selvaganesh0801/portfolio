@@ -32,7 +32,7 @@ function PortfolioDetailsComponent({skillsData}) {
             "category": "Web Application",
             "client": "India",
             "projectDate": "Mar 2025",
-            "projectUrl": "https://whatsappmarketing.hermonsolutions.com/"
+            "projectUrl": "http://whatsappmarketing.hermonsolutions.com/"
 
         },
         {
