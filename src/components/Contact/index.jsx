@@ -66,7 +66,7 @@ function Contact() {
           </svg>
         </div>
         <p></p> */}
-        <img className='w-25' src={`${import.meta.env.BASE_URL}${violetFlower}`} alt="" />
+        <img className='w-25' src={`${violetFlower}`} alt="" />
       </div>
       <div className="container" data-aos="fade-up" data-aos-delay="100">
 
