@@ -1,5 +1,7 @@
 /* common */
-
+body{
+    user-select: none !important;
+}
 .cursor-pointer {
     cursor: pointer;
 }
@@ -462,7 +464,32 @@
     font-size: 30px !important;
 }
 
+.resume-btndw {
+    color: #5d3fd3;
+    font-weight: 900;
+    font-size: 25px;
+    margin-left: 5px;
+}
+/* Vertical scrollbar */
 
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d5caff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00aeef;
+}
 /* * {
     cursor: url("./assets/img/cursor_32x32-removebg-preview.png") 0 0, auto;
 } */

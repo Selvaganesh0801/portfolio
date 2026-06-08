@@ -1,11 +1,36 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Tooltip } from "bootstrap";
 
 function Resume() {
+  useEffect(() => {
+  const tooltipTriggerList = document.querySelectorAll(
+    '[data-bs-toggle="tooltip"]'
+  );
+
+  [...tooltipTriggerList].forEach(
+    (tooltipTriggerEl) => new Tooltip(tooltipTriggerEl)
+  );
+}, []);
   return (
     <section id="resume" className="resume section">
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
+        {/* <h2>Resume</h2> */}
+        <h2
+  data-bs-toggle="tooltip"
+  data-bs-placement="top"
+  title="Download Resume"
+  style={{ cursor: "pointer",display:'inline' }}
+  onClick={() => {
+    const link = document.createElement("a");
+    link.href = `${import.meta.env.BASE_URL}resume/Selvaganesh_Frontend_Developer_ReactJS_2Yrs.pdf`;
+    link.download = "Selvaganesh_Frontend_Developer_ReactJS_2Yrs.pdf";
+    link.click();
+  }}
+>
+  Resume
+  <i className="resume-btndw bi bi-download"></i>
+  </h2>
         <div className="title-shape">
           <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
             <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" strokeWidth="2"></path>

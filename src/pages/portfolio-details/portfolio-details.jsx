@@ -16,6 +16,7 @@ function PortfolioDetails() {
       );
       const data = await res.json();
         setProjectDetails(data.projectDetails);
+        localStorage.setItem("projectDetails",JSON.stringify(data.projectDetails));
         setskillDetails(data.skillsData);
       } catch (error) {
         console.error("Error fetching projects:", error);
