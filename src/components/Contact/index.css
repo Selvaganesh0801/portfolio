@@ -2,11 +2,18 @@
     background: var(--accent-color);
     color: white;
 }
-.thankU-img{
-        width: 100%;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    background: #5d3fd32b;
+.thankU-img {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.thankU-img.violet {
+  background: #5d3fd32b;
+}
+
+.thankU-img.merown {
+  background: #d0407e29;
 }
 .x-mark{
     position: absolute;

@@ -490,6 +490,36 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: #00aeef;
 }
+
+.color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.violet {
+  background: #5d3fd3;
+}
+
+.merown {
+  background: #7a284b;
+}
+
+/* Selected Violet */
+.violet-active {
+  border: 6px solid #5d3fd3;
+  background: white;
+  box-sizing: border-box;
+}
+
+/* Selected Merown */
+.merown-active {
+  border: 6px solid #7a284b;
+  background: white;
+  box-sizing: border-box;
+}
 /* * {
     cursor: url("./assets/img/cursor_32x32-removebg-preview.png") 0 0, auto;
 } */

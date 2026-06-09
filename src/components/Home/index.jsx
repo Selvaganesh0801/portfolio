@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
-import profile from "../../assets/img/profile/sg_profile.png";
-import profile1 from "../../assets/img/profile/sg_profile3.png";
+import violetProfile from "../../assets/img/profile/sg_profile.png";
+import merownProfile from "../../assets/img/profile/sg_profile3.png";
+import { useTheme } from "../Context/ThemeContext";
 
 function Home() {
   const [experience, setExperience] = useState(0);
-  const images = [profile, profile1];
+  const {theme}=useTheme();
+  const images = theme=="violet" ? violetProfile : merownProfile;
   const [index, setIndex] = useState(0);
   const [loading,setLoading]=useState(false);
   useEffect(() => {
@@ -94,7 +96,11 @@ function Home() {
               I specialize in modern front-end technologies to create fast, accessible, and maintainable web applications. From responsive layouts to dynamic UIs, I bring digital ideas to life with precision and creativity.
             </p>
             <div className="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-              <a href="#portfolio" className="btn btn-53 btn-primary">
+              <a onClick={() => {
+    document
+      .getElementById("portfolio")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }} className="btn btn-53 btn-primary">
               <div className="original">View My Work</div>
                 <div className="letters">
                   <span>V</span>
@@ -111,7 +117,11 @@ function Home() {
                   <span>k</span>
                 </div>
               </a>
-              <a href="#contact" className="btn btn-54 btn-outline">
+              <a onClick={() => {
+    document
+      .getElementById("contact")
+      ?.scrollIntoView({ behavior: "smooth" });
+  }} className="btn btn-54 btn-outline">
               <div className="original">Let's Connect</div>
                 <div className="letters">
                   <span>L</span>
@@ -148,7 +158,8 @@ function Home() {
           <div className="col-lg-6">
             <div className="hero-image">
               <img
-                src={images[index]}
+                // src={images[index]}
+                src={images}
                 alt="Portfolio Hero Image"
                 className="img-fluid"
                 data-aos="zoom-out"

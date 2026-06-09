@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import violetFlower from "../../assets/img/violet-flower-row.png"
+import merownFlower from "../../assets/img/merown-flower-row.png"
 import thankYou from "../../assets/img/thankYou.png"
 import { Modal } from "bootstrap";
+import { useTheme } from '../Context/ThemeContext';
 
 function Contact() {
+  const {theme}=useTheme();
+  const flowerImg=theme=="violet" ? violetFlower:merownFlower;
   const [formData,setFormData]=useState({
     name:"",email:"",subject:"",message:""
   })
@@ -66,7 +70,7 @@ function Contact() {
           </svg>
         </div>
         <p></p> */}
-        <img className='w-25' src={`${violetFlower}`} alt="" />
+        <img className='w-25' src={`${flowerImg}`} alt="" />
       </div>
       <div className="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -222,7 +226,7 @@ function Contact() {
       <div class="modal-body text-center p-0">
         
         <div class="mb-3 position-relative">
-          <img class="thankU-img" src={thankYou}
+          <img class={`thankU-img ${theme}`} src={thankYou}
                alt="success"
               />
               <div className="x-mark" onClick={() =>{
@@ -249,7 +253,7 @@ function Contact() {
                 subject: "",
                 message: ""
               }),setSubmit(false)}
-            } style={{background:"var(--accent-color)"}} class="fw-bold btn btn-primary w-50 mt-3 p-2" data-bs-dismiss="modal">
+            } style={{background:"var(--accent-color)",border:"none"}} class="fw-bold btn btn-primary w-50 mt-3 p-2" data-bs-dismiss="modal">
           Close
         </button>
       </div>

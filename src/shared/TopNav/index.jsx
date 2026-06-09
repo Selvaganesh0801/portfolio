@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
+import { useTheme } from '../../components/Context/ThemeContext';
 
 const sections = ['hero', 'about', 'resume', 'portfolio','portfolio-details', 'services', 'contact'];
 
 function TopNav() {
+  const { theme, setTheme, toggleTheme } = useTheme();
   const [activeSection, setActiveSection] = useState('hero');
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
@@ -93,6 +95,21 @@ function TopNav() {
               </li>
 
               <li><Link to={"/"} state={{ setActiveSection: "contact" }} onClick={() => handleScroll('contact')} className={`cursor-pointer ${activeSection==='contact'?"active":""}`}><i className="fa-solid fa-address-book mx-1"></i> Contact</Link></li>
+            <li style={{ margin: "0 20px 0 30px", display: "flex", gap: "15px" }}>
+                <div
+                  className={`color-circle violet ${
+                    theme === "violet" ? "active violet-active" : ""
+                  }`}
+                  onClick={() => setTheme("violet")}
+                ></div>
+
+                <div
+                  className={`color-circle merown ${
+                    theme === "merown" ? "active merown-active" : ""
+                  }`}
+                  onClick={() => setTheme("merown")}
+                ></div>
+              </li>
             </ul>
             <i className={`mobile-nav-toggle d-xl-none bi ${menuOpen ? "bi-x" : "bi-list"}`}
               onClick={() => setMenuOpen(!menuOpen)}
