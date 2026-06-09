@@ -478,7 +478,8 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-    background: #d5caff;
+    
+    background: var(--scroll-bg-color);
     border-radius: 10px;
 }
 

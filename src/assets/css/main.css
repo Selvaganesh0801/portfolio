@@ -30,6 +30,7 @@
     --default-color: #0a0f14;
     --heading-color: #0f2943;
     --accent-color: #5D3FD3;
+    --scroll-bg-color: #d5caff;;
     --surface-color: #ffffff;
     --contrast-color: #ffffff;
 }
@@ -40,6 +41,7 @@
     --default-color: #0a0f14;
     --heading-color: #0f2943;
     --accent-color: #7A284B;
+    --scroll-bg-color:#fecbe1;
     --surface-color: #ffffff;
     --contrast-color: #ffffff;
 }
